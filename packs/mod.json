@@ -1,0 +1,33 @@
+{
+  "modName": "PeakExampleMod",
+  "author": "You",
+  "version": "0.0.1",
+  "contentTags": [ "Custom", "PeakTest" ],
+  "spawnables": [
+    {
+      "name": "Marshmallow",
+      "prefabName": "MarshmallowPrefab",
+      "bundlePath": "MyBundleGroupName"
+    },
+    {
+      "name": "GuidebookPage",
+      "prefabName": "GuidebookPagePrefab",
+      "bundlePath": "MyBundleGroupName"
+    }
+  ],
+  "segments": [
+    {
+      "index": 1,
+      "replace": true,
+      "isVariant": false,
+      "biome": "Tropics",
+      "segmentPrefab": "MyCustomSegmentPrefab",
+      "campfirePrefab": "MyCustomCampfirePrefab",
+      "id": "exampleseg01",
+      "spawnMappings": {
+        "marshmallowSpawner": "Marshmallow",
+        "giftSpawner": "GuidebookPage"
+      }
+    }
+  ]
+}
